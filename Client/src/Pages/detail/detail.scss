@@ -1,0 +1,184 @@
+@use "../../scss/" as *;
+
+.bannner {
+   
+    height: 800px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include overlay();
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to top, $body-bg, rgba($black, 0));
+    }
+}
+
+.movie-content {
+    @include flex(flex-start, flex-start);
+    // background-color: black;
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -700px;
+    position: relative;
+    padding: 0 2rem;
+    color: white;
+
+    &__poster {
+        flex: 1;
+
+        @include mobile {
+            display: none;
+        }
+
+        &__img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: $border-radius;
+            padding-top: 165%;
+        }
+    }
+
+    &__info {
+        width: 70%;
+        padding-left: 2rem;
+        position: relative;
+
+        @include mobile {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        & > * {
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 4rem;
+            line-height: 1;
+        }
+
+        .genres {
+            & > * ~ * {
+                margin-left: 0.5rem;
+            }
+
+            &__item {
+                padding: 0.5rem 2rem;
+                border: 2px solid $white;
+                border-radius: $border-radius;
+                font-size: 0.8rem;
+                font-weight: 600;
+                background-color: red;
+                color: white;
+            }
+            &__items {
+                padding: 0.5rem 2rem;
+                border: 2px solid $white;
+                border-radius: $border-radius;
+                font-size: 0.8rem;
+                font-weight: 600;
+                background-color: rgb(0, 0, 0);
+                color: white;
+            }
+            
+        }
+    }
+}
+
+.casts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+
+    &__item {
+        &__img {
+            padding-top: 160px;
+            border-radius: 50%;
+            background-size: cover;
+            margin-bottom: 1rem;
+        }
+
+        &__name {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.video {
+    margin-bottom: 3rem;
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+}.rate {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4b5563;
+    padding: 0.1rem 2rem;
+    border-radius: 1rem;
+    max-width: max-content;
+  }
+  
+  .review {
+    padding: 2 0.25rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .review h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .review p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #d1d5db;
+  }
+  
+  .BTS {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    // padding-top: 100px;
+    width: 120px; /* or any other smaller value */
+    height: 50px; /* or any other smaller value */
+ 
+  }
+  
+  button:hover {
+    background-color: #dc2626;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  br {
+    line-height: 2rem;
+  }

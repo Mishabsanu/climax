@@ -1,0 +1,138 @@
+.signup_container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #110f0f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.signup_form_container {
+	width: 900px;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgba(237, 228, 228, 0.949),
+		0px 3px 4px 0px rgba(247, 243, 243, 0.964), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+		@media (max-width: 1200px) {
+			width: 70%;
+		}
+		@media (max-width: 1100px) {
+			width: 80%;
+		}
+		@media (max-width: 900px) {
+			width: 90%;
+		}
+		@media (max-width: 750px) {
+			width: 70%;
+		}
+		@media (max-width: 500px) {
+			width: 80%;
+		}
+		@media (max-width: 400px) {
+			width: 90%;
+		}
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	width: 300px;
+    background-repeat: no-repeat;
+	background-image: url('https://cdn.donmai.us/original/c6/1f/c61f87ebacfbaab5db85b42390c74ee8.jpg');
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	@media (max-width: 750px) {
+		display: none;
+	}
+}
+
+.left h1 {
+	margin-top: 0;
+	color: rgb(248, 248, 248);
+	font-size: 35px;
+	align-self: center;
+}
+
+.right {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #110f0f;
+	// background-image: url('https://c4.wallpaperflare.com/wallpaper/806/317/171/hotel-transylvania-2-cartoon-movie-hotel-transylvania-2-movie-wallpaper-preview.jpg');
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: white;
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form_container h1 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+.input {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	color: #110f0f;
+	font-size: 14px;
+}
+
+
+.error_msg,
+.success_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.success_msg {
+	background-color: #5cdd5c;
+}
+
+.white_btn,
+.green_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: rgb(210, 12, 12);
+	border-radius: 20px;
+	width: 180px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #f2f0f0;
+	cursor: pointer;
+}
+
+.green_btn {
+	background-color: #fd0000;
+	color: white;
+	margin: 10px;
+}
+.loginSpan{
+	@media (max-width: 750px) {
+		display: block;
+	}
+	display: none;
+}

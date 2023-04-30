@@ -1,0 +1,286 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body1 {
+    font-family: "Lato", sans-serif;
+    /* background-color: #242333; */
+    /* background: url("myke-simon-atsUqIm3wxo-unsplash.jpg"),
+          linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0.9)); */
+    background: (#8b5edd), bottom;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 1);
+    padding-top: 25px;
+  }
+  
+  body1 .movie-container {
+    margin: 20px 0;
+  }
+  
+  body1 .movie-container select {
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Will remove the browser style and let you use your own style */
+  }
+  
+  body1 .container {
+    /*  it simply enables a 3D-space for children elements. */
+    /* perspective: 1000px;
+    -webkit-perspective: 1000px; */
+    height: 38.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body1 .container img {
+    opacity: 70%;
+    border-radius: 10px;
+    width: 300px;
+  }
+  
+  body1 .row-container {
+    margin-top: 30px;
+  }
+  
+  body1 .seat {
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+    height: 30px;
+    width: 35px;
+    background: #ad1025;
+    border: 2px solid #ec727d;
+    transition: all 0.2s ease;
+  }
+  
+  body1 .seat.selected {
+    background-color: #ec2c2c;
+    background-color: green;
+  }
+  
+  body1.seat.occupied {
+    background-color: rgb(163, 226, 81);
+  }
+  
+  body1 .seat:nth-of-type(2) {
+    margin-right: 18px;
+  }
+  
+  body1 .seat:nth-last-of-type(2) {
+    margin-left: 18px;
+  }
+  
+  body1 .seat:not(.occupied):hover {
+    /* Selecting seats that do not have "occupied" class */
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  
+  body1 .showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  
+  body1 .showcase {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  body1 .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  body1 .showcase li small {
+    margin-left: 2px;
+  }
+  
+  body1 .row {
+    display: flex;
+  }
+  
+  body1 .screen {
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(37, 74, 238, 0.7);
+  }
+  
+  body1 p.text {
+    margin: 5px 0;
+  }
+  
+  body1 p.text span {
+    color: #6feaf5;
+  }
+  
+  body1 .movie-screen {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  
+  body1 .movie-screen img {
+    max-width: 85%;
+  }
+  
+  body1 .subtitle {
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #31d7a9;
+    font-size: 16px;
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  body1 .subtitle:before,
+  body1 .subtitle:after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 1px;
+    background: #213a69;
+  }
+  
+  body1 .subtitle:before {
+    width: 80%;
+    top: 0;
+  }
+  
+  body1 .subtitle:after {
+    width: 100%;
+    bottom: 0;
+  }
+  
+  body1 .text {
+    font-size: 18px;
+  }
+  
+  body1 #count,
+  body1 #total {
+    font-size: 24px;
+    padding: 0 8px;
+  }
+  
+  body1 .text-wrapper {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    body1 {
+      padding-top: 30px;
+    }
+  
+    .movie-container select {
+      font-size: 14px;
+    }
+  
+    .seat {
+      height: 21px;
+      width: 23px;
+    }
+  
+    .movie-screen img {
+      max-width: 92%;
+    }
+  
+    .subtitle {
+      font-size: 13px;
+      padding: 7px;
+    }
+  
+    .seat:nth-of-type(2) {
+      margin-right: 12px;
+    }
+  
+    .seat:nth-last-of-type(2) {
+      margin-left: 12px;
+    }
+  
+    .movie-screen {
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+  
+    .text {
+      font-size: 14px;
+    }
+  
+    #count,
+    #total {
+      font-size: 18px;
+    }
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+  body2 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  #button {
+    cursor: pointer !important;
+    top: 30%;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    width: 135px;
+    height: 50px;
+    border-radius: 60px;
+    background:  #ec345c;
+    line-height: 46px;
+    text-align: center;
+    color: ivory;
+    font-weight: 500;
+    overflow: hidden;
+    letter-spacing: 0.52px;
+  }
+  #w {
+    position: absolute;
+    text-align: center;
+    color: #e6e9ec;
+    font-weight: 900;
+    left: 38.5%;
+    transform: scale(1.5) translateY(100%);
+  }

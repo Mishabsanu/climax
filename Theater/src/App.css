@@ -1,0 +1,7 @@
+.card{
+  margin-right:50px;
+}
+
+.carousel-inner .carousel-control-prev{
+  display: none;
+}

@@ -1,0 +1,132 @@
+.login_container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #110f0f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.login_form_container {
+	@media (max-width: 1200px) {
+		width: 70%;
+	}
+	@media (max-width: 1100px) {
+		width: 80%;
+	}
+	@media (max-width: 900px) {
+		width: 90%;
+	}
+	@media (max-width: 750px) {
+		width: 70%;
+	}
+	@media (max-width: 500px) {
+		width: 80%;
+	}
+	@media (max-width: 400px) {
+		width: 90%;
+	}
+	width: 60%;
+	height: 500px;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(246, 240, 240),
+		0px 3px 4px 0px rgb(240, 233, 233), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.left {
+	flex: 1.5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #110f0f;
+	color: #edf5f3;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form_container h1 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+.input {
+	outline: none;
+	border: none;
+	width: 370px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+.error_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.right {
+	@media (max-width: 750px) {
+		display: none;
+	}
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f64de9f4-8d22-43b4-85aa-e75f1f160bde/d5wybce-38ccfa68-9cd6-43e5-b876-a6b6e6702ccf.jpg/v1/fill/w_900,h_1411,q_75,strp/dracula___hotel_transylvania__video_link__by_ondjage_d5wybce-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQxMSIsInBhdGgiOiJcL2ZcL2Y2NGRlOWY0LThkMjItNDNiNC04NWFhLWU3NWYxZjE2MGJkZVwvZDV3eWJjZS0zOGNjZmE2OC05Y2Q2LTQzZTUtYjg3Ni1hNmI2ZTY3MDJjY2YuanBnIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.XV732Pcik2dfF2N05TSB3pJ74HjVTDAKX_KjOjdduRk');
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.right h1 {
+	margin-top: 0;
+	color: white;
+	font-size: 40px;
+	align-self: center;
+}
+
+.white_btn,
+.green_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: rgb(228, 2, 2);
+	border-radius: 20px;
+	width: 180px;
+	color: #edf5f3;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.green_btn {
+	background-color: #ec0303;
+	color: white;
+	margin: 10px;
+}
+
+
+.signupSpan{
+	@media (max-width: 750px) {
+		display: block;
+	}
+	display: none;
+}
